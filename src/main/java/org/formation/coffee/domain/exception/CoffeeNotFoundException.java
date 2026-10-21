@@ -1,10 +1,12 @@
 package org.formation.coffee.domain.exception;
 
-public class CoffeeNotFoundException {
+import org.formation.coffee.domain.model.CoffeeId;
+
+public class CoffeeNotFoundException extends DomainException{
     private final CoffeeId coffeeId;
 
     public CoffeeNotFoundException(CoffeeId coffeeId) {
-        super("Coffee " + coffeeId.value() + " not found")
+        super("Coffee " + coffeeId.value() + " not found");
         this.coffeeId = coffeeId;
     }
 
