@@ -1,0 +1,1 @@
+package org.formation.coffee.domain.model;
